@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <!-- FAVICON -->
+  <link rel="icon" href="icon2.jpg">
+
+    <title>Gửi người tớ thương</title>
+   <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<div class="center">
+  <!-- STEP 1 -->
+  <div class="card" id="step1">
+     <img src="z7791164731148_3803ba7fce3305f9205e461af73bd329.jpg" class="icon i1">
+  <img src="z7791164731162_f402e17860d27f497b6849f306c38458.jpg" class="icon i2">
+  <img src="z7791164733142_ea48efdecdd533762686c9c451a43f83.jpg" class="icon i3">
+    <div class="symbols">♠ ♥ ♦ ♣</div>
+    <h1>Tớ có thể gọi cậuu là gì?</h1>
+    <input type="text" id="nameInput">
+    <button onclick="goStep2()">okie chưa</button>
+  </div>
+
+  <!-- STEP 2 -->
+  <div class="card hidden" id="step2">
+       <img src="z7791164733142_ea48efdecdd533762686c9c451a43f83.jpg" class="icon i1">
+  <img src="z7791164734148_f99099b1f4ac0e3569239081b4bc1414.jpg" class="icon i2">
+  <img src="z7791164736100_9f9401761761f9322d840dd083f61357.jpg" class="icon i3">
+    <h1 id="question"></h1>
+    <input type="text" id="answerInput">
+    <button onclick="goEnvelope()">Típ nha</button>
+  </div>
+
+  <!-- ENVELOPE -->
+  <div class="card hidden" id="envelopeStep">
+       <img src="mặt.JPG" class="icon i1">
+  <img src="IMG_0410.PNG" class="icon i2">
+  <img src="z7791164739706_e717a71d28006f26abcadf9d5c88c4a4.jpg" class="icon i3">
+    <div class="envelope" onclick="openEnvelope()">
+      <div class="flap"></div>
+      <div class="letter-inside"><img src="z7791154917828_5436c0fb683f31dff03513e2b3322ff5.jpg" alt=""></div>
+    </div>
+    <p>Mở ra nhaa</p>
+  </div>
+
+  <!-- LETTER -->
+  <div class="card hidden" id="letterStep">
+      <img src="IMG_1646.PNG" class="icon i1">
+  <img src="icon2.jpg" class="icon i2">
+  <img src="z7791164746117_7b624af6db50f50b17e03c6aa152b7ce.jpg" class="icon i3">
+    <h1 id="letterTitle"></h1>
+    <p id="letterContent"></p>
+    <button onclick="showImage()">Cúi cùm ➜</button>
+  </div>
+
+  <!-- IMAGE -->
+  <div class="card hidden" id="imageStep">
+      <img src="z7791164746117_7b624af6db50f50b17e03c6aa152b7ce.jpg" class="icon i1">
+  <img src="IMG_7139.PNG" class="icon i2">
+  <img src="z7791164760635_2387103f3102d8b508b9997739481c9a.jpg" class="icon i3">
+    <h1>Nói nhỏ cái nì</h1>
+    <img src="Invitation.png">
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
